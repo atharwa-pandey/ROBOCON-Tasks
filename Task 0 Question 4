@@ -1,0 +1,22 @@
+test = int(input())
+while test :
+    num1 = int(input())
+    num2 = int(input())
+    revnum1 = 0
+    revnum2 = 0
+    revresult = 0
+    while(num1>0):
+        remnum1= num1%10
+        revnum1 = (revnum1*10) + remnum1
+        num1 = num1//10
+    while(num2>0):
+        remnum2= num2%10
+        revnum2 = (revnum2*10) + remnum2
+        num2 = num2//10
+    result = revnum1 + revnum2
+    while(result>0):
+        remresult= result%10
+        revresult = (revresult*10) + remresult
+        result = result//10
+    print("%d" %revresult)
+    test = test - 1
