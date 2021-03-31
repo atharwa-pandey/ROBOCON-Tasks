@@ -1,0 +1,15 @@
+number = int(input())
+string = input()
+condition = ['a','b','c','d','e','f','g']
+result = all(elem in string for elem in condition)
+if result:
+    i = 0
+    while i < (number+1)/2:
+        if string[i] != string[number - 1 - i]:
+            print('No')
+            break
+        i+=1
+    if i ==(number+1)/2:
+        print('Yes')
+else:
+    print('None')
