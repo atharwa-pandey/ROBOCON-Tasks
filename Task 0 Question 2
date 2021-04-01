@@ -7,13 +7,13 @@ for num in range(2,7000):
             break
     else:
         prime.append(num)
-print(prime)
 finallist = []
 for i in range(0,len(prime)):
     for j in range(0,len(prime)):
         k = prime[j] + 2*prime[i]**2
         if k>7000:
             break
-        tuple1 = (k,prime[j],prime[i])
-        finallist.append(tuple1)
+        if k%2 == 1:
+            tuple1 = (k,prime[j],prime[i])
+            finallist.append(tuple1)
 print(finallist)
