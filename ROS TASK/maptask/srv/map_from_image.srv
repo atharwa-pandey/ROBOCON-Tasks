@@ -1,0 +1,7 @@
+int64 centerX
+int64 centerY
+
+---
+
+int64[] x_coordinates
+int64[] y_coordinates
