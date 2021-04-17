@@ -1,0 +1,6 @@
+int64 centerX
+int64 centerY
+
+---
+
+int64[2] center
